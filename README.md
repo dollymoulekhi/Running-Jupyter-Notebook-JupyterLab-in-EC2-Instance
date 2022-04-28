@@ -59,3 +59,13 @@ chmod 400 "key.pem"
 ssh -i "key.pem" machineID
 
 ```
+
+
+## How to download a folder from virtual machine
+
+```
+scp -i "key.pem" -r user_name@ip:/location_from_where_you_want_to_download/ /destination_location
+```
+
+
+
