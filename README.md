@@ -39,8 +39,12 @@
 
 ### Making a directory ssl:
 ```mkdir ssl
+
 cd ssl
+
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout mykey.key -out mycert.pem
+
+
 jupyter-lab --port=8890 --certfile=~/ssl/mycert.pem --keyfile=~/ssl/mykey.key
 ```
 
